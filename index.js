@@ -21,7 +21,7 @@
 
 // Problem : 2
 
-  function checkName(name){
+function checkName(name){
 // Vairables Declaretion :
 arr = [ 'a', 'y', 'i', 'e', 'o' , 'u' , 'w'];
 let isName;
@@ -46,10 +46,10 @@ if(typeof(name) === 'string' && name.length >= 3){
 }
 }  
 
-console.log(checkName("rafee"))  
+//console.log(checkName("rafee"))  
+
+
 //Problem : 3 
-
-
   function deleteInvalids(arr) {
     if(!Array.isArray(arr)){
         return "inavlid Array";
@@ -65,7 +65,8 @@ console.log(checkName("rafee"))
 
     return newArray;
 }
-console.log(deleteInvalids({num: [ 1 , 2 , 3 ]})) 
+
+//console.log(deleteInvalids({num: [ 1 , 2 , 3 ]})) 
 
 
 // Problem : 4 
