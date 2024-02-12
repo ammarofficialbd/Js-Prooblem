@@ -1,6 +1,6 @@
 // Problem : 1 
 
-/* function calculateMoney(numOfSalingTickets) {
+ function calculateMoney(numOfSalingTickets) {
   // Vairables Declare :
   const ticketsPrice = 120;
   const guarddFee = 500;
@@ -17,10 +17,10 @@
     const remainAmount = totalAmount - totalCost;
     return remainAmount;
   }
-} */
+} 
 
 // Problem : 2
-/* 
+
   function checkName(name){
 // Vairables Declaretion :
 arr = [ 'a', 'y', 'i', 'e', 'o' , 'u' , 'w'];
@@ -46,10 +46,11 @@ if(typeof(name) === 'string' && name.length >= 3){
 }
 }  
 
-console.log(checkName("rafee"))  */
+console.log(checkName("rafee"))  
 //Problem : 3 
 
-/*   function deleteInvalids(arr) {
+
+  function deleteInvalids(arr) {
     if(!Array.isArray(arr)){
         return "inavlid Array";
     }
@@ -65,11 +66,11 @@ console.log(checkName("rafee"))  */
     return newArray;
 }
 console.log(deleteInvalids({num: [ 1 , 2 , 3 ]})) 
- */
+
 
 // Problem : 4 
 
-/* function password(obj) {
+function password(obj) {
   
 if (!obj || typeof obj !== 'object') {
     return 'invalid';
@@ -88,12 +89,12 @@ if (typeof obj.birthYear !== 'number' || obj.birthYear.toString().split("").leng
     return result;
  
 }
- */
+ 
  
 
 // Problem : 5 
 
-/*  function monthlySavings(arr, livingCost) {
+  function monthlySavings(arr, livingCost) {
     if(!Array.isArray(arr) && typeof livingCost !== 'number' || isNaN(livingCost)){
         return 'ivalid Input';
     }
@@ -117,4 +118,4 @@ if (typeof obj.birthYear !== 'number' || obj.birthYear.toString().split("").leng
     return totalSavings;
   } 
 
- */
+ 
