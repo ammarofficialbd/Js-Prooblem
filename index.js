@@ -1,35 +1,34 @@
-/* Problem : 1 */
-/*  function calculateMoney (numOfSalingTickets) {
-// Vairables Declare :
-const ticketsPrice = 120;
-const guarddFee = 500;
-const staffLauchFee = 50;
-const numOfStaff = 8;
-const totalStaffLaunchCost = numOfStaff * staffLauchFee;
+// Problem : 1 
 
-// Expresion 
-const totalCost = guarddFee + totalStaffLaunchCost ; 
-if ( numOfSalingTickets <= 0 || isNaN(numOfSalingTickets)){ 
-    console.log("Baker Vai Plz Provide Valid Number");
-    return;
-}else{
-    const totalAmount = ticketsPrice * numOfSalingTickets ;
-    const remainAmount = totalAmount - totalCost ;
+/* function calculateMoney(numOfSalingTickets) {
+  // Vairables Declare :
+  const ticketsPrice = 120;
+  const guarddFee = 500;
+  const staffLauchFee = 50;
+  const numOfStaff = 8;
+  const totalStaffLaunchCost = numOfStaff * staffLauchFee;
+
+  // Expresion
+  const totalCost = guarddFee + totalStaffLaunchCost;
+  if (numOfSalingTickets <= 0 || isNaN(numOfSalingTickets)) {
+    return "Baker Vai Plz Provide Valid Number";
+  } else {
+    const totalAmount = ticketsPrice * parseInt(numOfSalingTickets);
+    const remainAmount = totalAmount - totalCost;
     return remainAmount;
-}
-}
- */
+  }
+} */
 
-/* Problem : 2 */
+// Problem : 2
 /* 
- function checkName(name){
+  function checkName(name){
 // Vairables Declaretion :
 arr = [ 'a', 'y', 'i', 'e', 'o' , 'u' , 'w'];
-nameArray = name.toLowerCase().split('');
-lastIndexOfNameArray = nameArray[nameArray.length-1]
 let isName;
 //Logic Build
 if(typeof(name) === 'string' && name.length >= 3){
+    nameArray = name.toLowerCase().split('');
+    lastIndexOfNameArray = nameArray[nameArray.length-1];
     for(i=0; i< arr.length; i++){
         if(arr[i] === lastIndexOfNameArray){
           isName = true;
@@ -38,83 +37,63 @@ if(typeof(name) === 'string' && name.length >= 3){
        }
     
        if(isName) {
-        console.log(`Good Name: ${name}`) 
+         return `Good Name: ${name}`;
        }else{
-        console.log(`Bad Name: ${name}`) 
+        return `Bad Name: ${name}`;
        }
 }else{
-    console.log('invalid')
+    return 'invalid';
 }
+}  
 
-return name;
-} 
+console.log(checkName("rafee"))  */
+//Problem : 3 
 
-*/
-
-
-
-
-/* Problem : 3 */
-/* function deleteInvalids(arr) {
+/*   function deleteInvalids(arr) {
     if(!Array.isArray(arr)){
-        console.error("inavlid")
-        return [];
+        return "inavlid Array";
     }
     let newArray = [];
     let j = 0;
     for (let i = 0; i < arr.length; i++) {
         if (!isNaN(arr[i]) && typeof arr[i] === 'number') {
             // newArray[j++] = arr[i]
-            result.push(arr[i]);
+            newArray.push(arr[i]);
         }
     }
 
     return newArray;
 }
+console.log(deleteInvalids({num: [ 1 , 2 , 3 ]})) 
  */
 
+// Problem : 4 
 
-
- /* Problem : 4 */
 /* function password(obj) {
+  
+if (!obj || typeof obj !== 'object') {
+    return 'invalid';
+}
 
-   if (!obj || typeof obj !== 'object' || !('name' in obj) || !('birthYear' in obj)) {
+if (!('name' in obj) || !('birthYear' in obj) || !('siteName' in obj)) {
     return 'invalid';
-}else if(obj.birthYear <= 4){
+}
+
+if (typeof obj.birthYear !== 'number' || obj.birthYear.toString().split("").length < 4) {
     return 'invalid';
-}else{
+}
+
     const {name , birthYear, siteName} = obj
     const result = siteName.charAt(0).toUpperCase()+siteName.slice(1)+'#'+name+'@'+birthYear;
     return result;
-  }
  
 }
+ */
+ 
 
-*/
+// Problem : 5 
 
-
-
-
-
-/* Problem : 5 */
-/* 
-function monthlySavings(arr,cost){
-   let totalIncome = 0;
-   
- for(i = 0 ; i<arr.length; i++){
-    if(arr[i] >= 3000){
-        arr[i] = (arr[i] * 0.2);
-    }
-    totalIncome = totalIncome + arr[1];
- } 
- const totalSavings = totalIncome - cost;
-    return totalSavings;
-} 
-
-console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400)) */
-
-
-/* function monthlySavings(arr, livingCost) {
+/*  function monthlySavings(arr, livingCost) {
     if(!Array.isArray(arr) && typeof livingCost !== 'number' || isNaN(livingCost)){
         return 'ivalid Input';
     }
@@ -136,5 +115,6 @@ console.log(monthlySavings([ 1000 , 2000 , 3000 ] , 5400)) */
       }
 
     return totalSavings;
-  } */
+  } 
 
+ */
